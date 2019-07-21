@@ -73,7 +73,7 @@ relocated:
 	# so that once we get into debugging C code,
 	# stack backtraces will be terminated properly.
 	# zfz: this is the first instruction that will fail,
-	# if we comment 'movl %eax, %cr0'
+	# zfz: if we comment 'movl %eax, %cr0'
 	movl	$0x0,%ebp			# nuke frame pointer
 
 	# Set the stack pointer
